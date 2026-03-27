@@ -94,6 +94,7 @@ body p {
     transform: scale(1.05);
     box-shadow: 0 0 15px var(--primary);
 }
+
 /* About Page Hero Section */
 .about-hero {
     height: 100vh;
@@ -245,4 +246,62 @@ body p {
     border-color:var(--primary); 
     box-shadow:0 20px 50px rgba(0,0,0,.4); 
     transition: all 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.feature-card p {
+    color: #ccc;
+    font-family: "Satoshi", sans-serif;
+    font-size: 0.95rem;
+}
+.feature-card .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+/* Business Strategy Section */
+.business-strategy {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.business-strategy h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.business-strategy p {
+    color: #ccc;
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.business-strategy ul {
+    list-style: disc inside;
+    margin-top: 20px;
+}
+.business-strategy ul li {
+    margin-bottom: 10px;
+    font-family: "Satoshi", sans-serif;
+}
+.business-strategy ul li::marker {
+    color: var(--primary);
+}
+.business-strategy h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--glass);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
 }
