@@ -4,7 +4,13 @@
     --accent: #22d3ee;
     --glass: rgba(255, 255, 255, 0.05);
     --border: rgba(255, 255, 255, 0.1);
+    --purple-vibrant: #9333ea;
+    --teal-calm: #14b8a6;
+    --orange-alert: #f97316;
+    --grey-text: #E0E0E0;
+    --label-text: #a1a1aa;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
@@ -282,10 +288,20 @@ body p {
     color: var(--grey-text);
 }
 
-.dot-indicator { width: 10px; height: 10px; border-radius: 50%; }
-.dot-indicator.purple { background-color: var(--purple-vibrant); }
-.dot-indicator.teal { background-color: var(--teal-calm); }
-.dot-indicator.orange { background-color: var(--orange-alert); }
+.dot-indicator { 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+}
+.dot-indicator.purple { 
+    background-color: var(--purple-vibrant); 
+}
+.dot-indicator.teal { 
+    background-color: var(--teal-calm); 
+}
+.dot-indicator.orange { 
+    background-color: var(--orange-alert); 
+}
 
 /* --- 2. Trend Graph Styling (CSS-only illusion) --- */
 .trend-graph h3 {
