@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business & Scalability | PAM AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">PAM <span>AI</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#product">Product</a></li>
+            <li><a href="index.html#market">Market</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="index.html#team">Team</a></li>
+        </ul>
+        <button class="nav-cta">Sign Up for Updates</button>
+    </nav>
+
+    <section class="product-details" style="margin-top: 120px;">
+        <h1>Business <span>Strategy</span></h1>
+        <p>Our roadmap for sustainable growth and market expansion across the Eurozone.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">💎</div>
+                <h3>Revenue: Freemium</h3>
+                <p>Standard features remain free for everyone. <strong>PAM Pro (€4.99/mo)</strong> unlocks automated tax filing and advanced AI market predictions.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon">🌍</div>
+                <h3>Scalability</h3>
+                <p>By leveraging Ireland's <strong>EU Passporting</strong>, we aim to scale operations seamlessly across the Eurozone by Year 3 of our roadmap.</p>
+            </div>
+        </div>
+
+        <div class="feature-card" style="margin-top: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <h3>Try the PAM Effect</h3>
+            <p>Enter your average monthly spending in € to see potential savings:</p>
+            <div style="margin: 20px 0;">
+                <input type="number" id="monthlySpend" placeholder="e.g. 800" >
+                <button class="nav-cta" onclick="calculateSavings()">Calculate</button>
+            </div>
+            <p id="savingsResult" style="color: var(--accent); font-weight: bold; font-size: 1.2rem;"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 PAM AI. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Simple fallback function if your external script isn't linked yet
+        function calculateSavings() {
+            const spend = document.getElementById('monthlySpend').value;
+            if (spend) {
+                const savings = (spend * 0.1).toFixed(2); // Estimating 10% savings
+                document.getElementById('savingsResult').innerText = `PAM could help you save ~€${savings} per month!`;
+            }
+        }
+    </script>
+</body>
+</html>

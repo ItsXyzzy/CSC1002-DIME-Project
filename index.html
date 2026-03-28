@@ -8,40 +8,92 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#a855f7">
 </head>
 <body>
 <nav class="navbar">
-        <div class="logo"><a href="#">PAM <span>AI</span></a></div>
+        <div class="logo"><a href="index.html">PAM <span>AI</span></a></div>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Market</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="market.html">Market</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
         <button class="nav-cta">Sign Up for Updates</button>
     </nav>
     <header class="about-hero">
         <div class="bg-glow"></div>
-        <h1>Your Finances,<br>Finally <span>Unified.</span></h1>
-        <p>PAM bridges the gap between fragmented Irish banking and actionable intelligence, using LLMs to turn raw transaction data into a conversational financial coach.</p>
-    </header>
-    <section class ="sample-insight">
-        <div class="chat-bubble">
-                <div class="chat-bubble-user">
-                <div class="icon">👤</div>
-                <p><b>User:</b> How can I save more money each month?</p>
+        <div class="header-content">
+            <h1>Your Finances,<br>Finally <span>Unified.</span></h1>
+            <div class="pam-dashboard-stage">
+                <div class="pam-dashboard-window">
+                    <div class="pam-title-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        
+                    </div>
+
+                    <div class="pam-section main-balance">
+                        <h1 class="balance Satoshi-Bold">€19,042.00</h1>
+                        <p class="subtitle Satoshi-Medium">Total Balance (+€1,173.00 this month)</p>
+                        
+                        <div class="pam-bubbles">
+                            <div class="pam-bubble housing Satoshi-Bold">
+                                <span class="dot-indicator purple"></span> Housing: €1,800
+                            </div>
+                            <div class="pam-bubble shopping Satoshi-Bold">
+                                <span class="dot-indicator teal"></span> Shopping: €1,245
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pam-section trend-graph">
+                        <h3 class="Satoshi-Medium">Spending Trend</h3>
+                        <svg class="pam-chart" viewBox="0 0 500 100" preserveAspectRatio="none">
+                            <path d="M0,80 C50,70 100,90 150,60 C200,30 250,50 300,40 C350,30 400,60 450,50 C500,40 500,100 0,100 Z" fill="rgba(147, 51, 234, 0.2)" stroke="none" />
+                            <path d="M0,80 C50,70 100,90 150,60 C200,30 250,50 300,40 C350,30 400,60 450,50 C500,40" fill="none" stroke="#9333ea" stroke-width="3" />
+                        </svg>
+                        <div class="graph-labels pam-label Satoshi-Medium uppercase">
+                            <span>Week 1</span>
+                            <span>Week 2</span>
+                            <span>Week 3</span>
+                            <span>Week 4</span>
+                        </div>
+                    </div>
+
+                    <div class="pam-section ai-nudge Satoshi-Regular">
+                        <span class="dot-indicator orange"></span> "You spent 15% less on dining out this month. Great job! Consider allocating €40 towards your Savings goal."
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="chat-bubble">
-            <div class="chat-bubble-pam">
-            <div class="icon">🤖</div>
-            <p><b>PAM AI:</b> Based on your spending patterns, you could save €82 per month by canceling unused subscriptions. Would you like me to show you which ones?</p>
-        </div>
+    </header>
+    <section class="below-hero">
+        <div class="hero-bottom">
+            <section class="sample-insight">
+                <div class="chat-bubble">
+                    <div class="chat-bubble-user">
+                        <div class="icon">👤</div>
+                        <p><b>User:</b> How can I save more money each month?</p>
+                    </div>
+                </div>
+                <div class="chat-bubble">
+                    <div class="chat-bubble-pam">
+                        <div class="icon">🤖</div>
+                        <p><b>PAM AI:</b> Based on your spending patterns, you could save €82 per month by canceling unused subscriptions. Would you like me to show you which ones?</p>
+                    </div>
+                </div>
+            </section>
+            <div class="hero-description">
+                <p>PAM bridges the gap between fragmented Irish banking and actionable intelligence, using LLMs to turn raw transaction data into a conversational financial coach.</p>
+            </div>
         </div>
     </section>
+
     <section class="product-details">
         <h2>What is PAM AI?</h2>
         <p>PAM AI is a next-generation personal account manager designed specifically for the Irish market. By leveraging large language models (LLMs), PAM transforms your financial data into personalized insights and actionable advice, helping you take control of your money like never before.</p>
