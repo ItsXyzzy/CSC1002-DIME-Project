@@ -231,7 +231,6 @@ body p {
 }
 /* Sample Dashboard Section */
 .pam-widget {
-    --pw-bg: #12101a;
     --pw-card: rgba(255,255,255,0.06);
     --pw-border: rgba(255,255,255,0.10);
     --pw-purple: #a855f7;
@@ -239,7 +238,7 @@ body p {
     --pw-text: #ffffff;
     --pw-muted: #9ca3af;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: var(--pw-bg);
+    background: var(--glass);
     border-radius: 20px;
     border: 1px solid var(--pw-border);
     padding: 22px;
