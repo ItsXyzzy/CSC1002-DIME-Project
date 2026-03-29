@@ -25,67 +25,72 @@
         <button class="nav-cta">Sign Up for Updates</button>
     </nav>
     <header class="about-hero">
-        <div class="bg-glow"></div>
+    <div class="bg-glow"></div>
+    <div class="hero-inner">
         <div class="header-content">
-            <h1>Your Finances,<br>Finally <span>Unified.</span><br><br><button class="hero-cta"><a href='#below-hero' target='_blank'>Learn More</a></button></h1>
-            <div class="pam-dashboard-stage">
-                <div class="pam-dashboard-window">
-    <div class="pam-title-bar">
-        <div class="dot-group">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-        </div>
-        <span class="pam-label uppercase">PAM AI</span>
-    </div>
-
-    <div class="pam-section account-overview">
-        <div class="account-card">
-            <span class="pam-label uppercase">Bank of Ireland • Current</span>
-            <h2 class="Satoshi-Bold">€4,255.80</h2>
-        </div>
-        <div class="account-card">
-            <span class="pam-label uppercase">AIB • Savings</span>
-            <h2 class="Satoshi-Bold">€12,450.00</h2>
-        </div>
-    </div>
-
-    <div class="pam-section simple-graph">
-        <div class="graph-header">
-            <span class="pam-label uppercase">Monthly Trend</span>
-            <span class="trend-stat">+12%</span>
-        </div>
-        <div class="bar-container">
-    <div class="bar-wrapper">
-        <div class="bar prev"></div> <span class="uppercase">Last Month</span>
-    </div>
-    <div class="bar-wrapper">
-        <div class="bar current"></div> <span class="uppercase">This Month</span>
-    </div>
+    <h1>Your Finances,<br>Finally <span>Unified.</span><br><button class="hero-cta"><a href='#below-hero'>Learn More</a></button></h1>
 </div>
-    </div>
+        <div class="pam-widget">
+            <div class="pw-header">
+                <span class="pw-logo">PAM AI</span>
+                <span><span class="pw-dot"></span></span>
+            </div>
 
-    <div class="pam-section ai-mini-nudge">
-        <span class="dot-indicator purple"></span>
-        <p class="Satoshi-Regular">Your savings are growing 4% faster than last quarter. Keep it up!</p>
-    </div>
-</div>
+            <div class="pw-balance-label">Total Balance</div>
+            <div class="pw-balance">€19,041.20</div>
+            <div class="pw-balance-change">▲ €175.50 this month</div>
+
+            <div class="pw-accounts">
+                <div class="pw-account">
+                <div class="pw-account-dot" style="background:#a855f7;"></div>
+                <div class="pw-account-name">BOI Current</div>
+                <div class="pw-account-amt">€7,320</div>
+                </div>
+                <div class="pw-account">
+                <div class="pw-account-dot" style="background:#22d3ee;"></div>
+                <div class="pw-account-name">Revolut</div>
+                <div class="pw-account-amt">€1,245</div>
+                </div>
+                <div class="pw-account">
+                <div class="pw-account-dot" style="background:#f59e0b;"></div>
+                <div class="pw-account-name">AIB Savings</div>
+                <div class="pw-account-amt">€10,476</div>
+                </div>
+            </div>
+
+            <div class="pw-bar-section">
+                <div class="pw-bar-label"><span>Monthly Budget</span><span>€1,840 / €2,500</span></div>
+                <div class="pw-bar-track"><div class="pw-bar-fill" style="width: 74%;"></div></div>
+            </div>
+            <div class="pw-bar-section">
+                <div class="pw-bar-label"><span>Subscriptions</span><span>€64 / €80</span></div>
+                <div class="pw-bar-track"><div class="pw-bar-fill" style="width: 80%; background: linear-gradient(90deg, #22d3ee, #a855f7);"></div></div>
+            </div>
+
+            <div class="pw-insight">
+                <div class="pw-insight-icon">💡</div>
+                <div>
+                <div class="pw-insight-label">AI Insight</div>
+                <div class="pw-insight-text">You could save <strong style="color:#a855f7;">€82/mo</strong> by cancelling 3 unused subscriptions.</div>
+                </div>
+            </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <section class="below-hero" id="below-hero">
         <div class="hero-bottom">
             <section class="sample-insight">
                 <div class="chat-bubble">
                     <div class="chat-bubble-user">
-                        <div class="icon">👤</div>
+                        <div class="chat-icon">👤</div>
                         <p><b>User:</b> How can I save more money each month?</p>
                     </div>
                 </div>
                 <div class="chat-bubble">
                     <div class="chat-bubble-pam">
-                        <div class="icon">🤖</div>
                         <p><b>PAM AI:</b> Based on your spending patterns, you could save €82 per month by canceling unused subscriptions. Would you like me to show you which ones?</p>
+                        <div class="chat-icon">🤖</div>
                     </div>
                 </div>
             </section>
