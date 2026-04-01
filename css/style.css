@@ -640,7 +640,124 @@ html {
     border-color: var(--primary);
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Responsive Navbar */
 @media (max-width: 768px) {
-    .about-hero h1 { font-size: 2.2rem; }
+    nav {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(10, 10, 12, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+        padding: 20px 0;
+        border-top: 1px solid #1e1e24;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        list-style: none;
+    }
+
+    nav ul.active {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 16px 20px;
+        border-bottom: 1px solid #1e1e24;
+        font-size: 0.95rem;
+        transition: background 0.2s, color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: rgba(0, 255, 136, 0.1);
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+    }
+
+    .about-hero h1 { 
+        font-size: 2.2rem; 
+    }
+
+    .chat-demo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .chat-bubble-text {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .dash {
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-list {
+        max-width: 100%;
+    }
 }
 
