@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team — PAM AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ── Google Font ── */
+
+        :root {
+            --primary: #00ff88;
+            --bg: #0a0a0c;
+            --text: #ffffff;
+            --card-bg: #16161a;
+            --muted: #888;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ── NAV ── */
+       
+
+        /* ── HERO ── */
+        .team-hero {
+            padding: 100px 10% 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .team-hero::before {
+            content: '';
+            position: absolute;
+            top: -100px; left: 50%;
+            transform: translateX(-50%);
+            width: 600px; height: 400px;
+            background: radial-gradient(ellipse, rgba(0,255,136,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .team-hero .label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--primary);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .team-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .team-hero h1 span { color: var(--primary); }
+        .team-hero p {
+            max-width: 560px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        /* ── ABOUT PROJECT BAND ── */
+        .project-band {
+            margin: 60px 10%;
+            padding: 40px 50px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            border: 1px solid #2a2a32;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-band::after {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--primary);
+            border-radius: 4px 0 0 4px;
+        }
+        .project-band .pam-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            white-space: nowrap;
+            letter-spacing: -2px;
+        }
+        .project-band .pam-desc h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .project-band .pam-desc p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .project-band .pam-tag {
+            font-size: 0.7rem;
+            font-family: 'Space Mono', monospace;
+            color: var(--primary);
+            background: rgba(0,255,136,0.08);
+            border: 1px solid rgba(0,255,136,0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        /* ── TEAM GRID ── */
+        .team-section {
+            padding: 40px 10% 100px;
+        }
+        .section-heading {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--primary);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* ── MEMBER CARD ── */
+        .member-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            border: 1px solid #222228;
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s, transform 0.3s;
+            animation: fadeUp 0.5s ease both;
+        }
+        .member-card:hover {
+            border-color: rgba(0,255,136,0.35);
+            transform: translateY(-4px);
+        }
+        .member-card::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 80px; height: 80px;
+            background: radial-gradient(circle at top right, rgba(0,255,136,0.07), transparent 70%);
+        }
+
+        .member-number {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--primary);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+
+        .avatar-wrap {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0,255,136,0.15), rgba(0,255,136,0.04));
+            border: 2px solid rgba(0,255,136,0.25);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .member-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.3px;
+        }
+        .member-role {
+            font-size: 0.8rem;
+            font-family: 'Space Mono', monospace;
+            color: var(--primary);
+            margin-bottom: 16px;
+            opacity: 0.85;
+        }
+        .member-bio {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.65;
+            border-top: 1px solid #1e1e24;
+            padding-top: 16px;
+        }
+
+        /* ── STATS ROW ── */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 60px 10%;
+            border-top: 1px solid #1e1e24;
+            border-bottom: 1px solid #1e1e24;
+            margin: 0 10%;
+        }
+        .stat-item { text-align: center; }
+        .stat-item .num {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-item .desc {
+            font-size: 0.8rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* ── FOOTER ── */
+        
+
+        /* ── ANIMATION ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .member-card:nth-child(1) { animation-delay: 0.05s; }
+        .member-card:nth-child(2) { animation-delay: 0.10s; }
+        .member-card:nth-child(3) { animation-delay: 0.15s; }
+        .member-card:nth-child(4) { animation-delay: 0.20s; }
+        .member-card:nth-child(5) { animation-delay: 0.25s; }
+        .member-card:nth-child(6) { animation-delay: 0.30s; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .project-band { flex-direction: column; padding: 30px; gap: 20px; }
+            .project-band .pam-label { font-size: 2rem; }
+            .stats-row { gap: 30px; flex-wrap: wrap; margin: 0 5%; }
+            .team-hero, .team-section { padding-left: 6%; padding-right: 6%; }
+            nav ul { gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+    <div class="logo">PAM AI</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Innovation</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="team-hero">
+    <div class="label">Digital Innovation Management &amp; Enterprise</div>
+    <h1>The people behind<br><span>PAM AI</span></h1>
+    <p>Six students. One product. A shared goal of making personal finance smarter for everyone.</p>
+</section>
+
+<!-- STATS -->
+<div class="stats-row">
+    <div class="stat-item">
+        <div class="num">6</div>
+        <div class="desc">Team Members</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">DCU</div>
+        <div class="desc">Dublin City University</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">1</div>
+        <div class="desc">AI Product</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">∞</div>
+        <div class="desc">Ambition</div>
+    </div>
+</div>
+
+<!-- ABOUT PAM AI BAND -->
+<div class="project-band">
+    <div class="pam-label">PAM<br>AI</div>
+    <div class="pam-desc">
+        <div class="pam-tag">Our Project</div>
+        <h3>Personal AI Money Assistant</h3>
+        <p>PAM AI is an intelligent budget tracking assistant that helps users take control of their finances through real-time insights, spending analysis, and personalised recommendations — all powered by AI. Built as part of the Digital Innovation Management &amp; Enterprise module at DCU.</p>
+    </div>
+</div>
+
+<!-- TEAM GRID -->
+<section class="team-section">
+    <div class="section-heading">— Meet the team</div>
+    <div class="team-grid">
+
+        <div class="member-card">
+            <div class="member-number">01</div>
+            <div class="avatar-wrap">VY</div>
+            <div class="member-name">Vladyslav Yaroshovets</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">From shaping the business model to building the product, Vladyslav is hands-on at every stage. His technical background and drive to execute make him a cornerstone of everything PAM AI stands for.</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-number">02</div>
+            <div class="avatar-wrap">NH</div>
+            <div class="member-name">Nazarii Heiko</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">Nazarii brings sharp thinking and genuine commitment to every part of the project. Whether it's research, strategy, or execution — he's always at the table, pushing PAM AI forward.</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-number">03</div>
+            <div class="avatar-wrap">CD</div>
+            <div class="member-name">Craig Dowdall</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">Craig's ideas and work ethic are woven into every layer of PAM AI. From the earliest brainstorms to the final pitch, his involvement has been essential to shaping what the product became.</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-number">04</div>
+            <div class="avatar-wrap">OB</div>
+            <div class="member-name">Obafemi</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">Obafemi brings a unique perspective that challenges the team to think bigger. His contributions span across research, product thinking, and communication — making PAM AI stronger at every step.</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-number">05</div>
+            <div class="avatar-wrap">PC</div>
+            <div class="member-name">Pearce Cope</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">Pearce is the kind of person who gets things done. His clarity of thought and willingness to take ownership across all areas of the project have been invaluable to the team's progress.</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-number">06</div>
+            <div class="avatar-wrap">BU</div>
+            <div class="member-name">Busta</div>
+            <div class="member-role">Co-Founder</div>
+            <div class="member-bio">Busta's energy sets the tone. Always contributing, always present — from shaping the product vision to delivering on the details, he's been a driving force behind PAM AI from day one.</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo">PAM AI</div>
+            <p class="footer-tagline">Your personal AI money assistant.<br>Built by students, designed for everyone.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-col">
+                <div class="footer-col-title">Navigate</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">Innovation</a>
+                <a href="market.html">Market</a>
+                <a href="business.html">Business</a>
+                <a href="team.html">Team</a>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Project</div>
+                <span>Digital Innovation Management &amp; Enterprise</span>
+                <span>Dublin City University</span>
+                <span>Academic Year 2025–2026</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 PAM AI — All rights reserved</span>
+        <span>Made with ♥ at DCU</span>
+    </div>
+</footer>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('nav-scrolled');
+        } else {
+            navbar.classList.remove('nav-scrolled');
+        }
+    });
+</script>
+</body>
+</html>

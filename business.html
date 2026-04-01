@@ -1,71 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business & Scalability | PAM AI</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <title>Business &amp; Finance | PAM AI</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="bg-glow"></div>
 
-    <nav class="navbar">
-        <div class="logo"><a href="index.html">PAM <span>AI</span></a></div>
-        <ul class="nav-links">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#product">Product</a></li>
-            <li><a href="index.html#market">Market</a></li>
-            <li><a href="business.html">Business</a></li>
-            <li><a href="index.html#team">Team</a></li>
-        </ul>
-        <button class="nav-cta">Sign Up for Updates</button>
-    </nav>
+    <nav id="navbar">
+    <div class="logo">PAM AI</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Innovation</a></li>
+        <li><a href="market.html" >Market</a></li>
+        <li><a href="business.html" class="active">Business</a></li>
+        <li><a href="team.html">Team</a></li>
+    </ul>
+</nav>
 
-    <section class="product-details" style="margin-top: 120px;">
-        <h1>Business <span>Strategy</span></h1>
-        <p>Our roadmap for sustainable growth and market expansion across the Eurozone.</p>
+    <div class="content-page">
+
+        <h1>Business &amp; <span class="highlight">Financial Highlights</span></h1>
+        <p>An overview of how PAM AI plans to generate revenue, grow its user base, and expand across Europe.</p>
+
+       
+        <h2 style="margin-top: 50px;">Key Statistics</h2>
+        <p>These figures show the size of the problem PAM AI is trying to solve.</p>
+
+        <div class="market-stats">
+            <div class="stat-box">
+                <h2 class="highlight">48%</h2>
+                <p>of young adults avoid checking their banking apps due to financial stress (Deloitte, 2025)</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="highlight">72%</h2>
+                <p>of under-35s are looking for AI tools to help manage rising living costs (Bank of America, 2025)</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="highlight">€4.99</h2>
+                <p>per month for PAM Pro less than most unused subscriptions PAM will help you cancel</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="highlight">27</h2>
+                <p>EU member states accessible via Irish financial passporting by Year 3</p>
+            </div>
+        </div>
+
         
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="icon">💎</div>
-                <h3>Revenue: Freemium</h3>
-                <p>Standard features remain free for everyone. <strong>PAM Pro (€4.99/mo)</strong> unlocks automated tax filing and advanced AI market predictions.</p>
+        <h2 style="margin-top: 50px;">Revenue Model</h2>
+        <p>PAM AI uses a freemium model. The free plan gets users through the door, and PAM Pro offers advanced features for those who want more control over their finances.</p>
+
+        <div class="grid" style="margin-top: 30px;">
+            <div class="card">
+                <h3>Free Plan — PAM Standard</h3>
+                <h2 class="highlight">€0 <span style="font-size: 1rem; color: white;">/month</span></h2>
+                <ul style="text-align: left; margin-top: 15px; padding-left: 20px; display: block;">
+                    <li>Connect Irish bank accounts via Open Banking</li>
+                    <li>Automatic expense categorisation</li>
+                    <li>Monthly spending summaries and charts</li>
+                    <li>Basic AI chat assistant</li>
+                    <li>Daily balance notifications</li>
+                </ul>
             </div>
-            
-            <div class="feature-card">
-                <div class="icon">🌍</div>
-                <h3>Scalability</h3>
-                <p>By leveraging Ireland's <strong>EU Passporting</strong>, we aim to scale operations seamlessly across the Eurozone by Year 3 of our roadmap.</p>
+            <div class="card" style="border-color: #00ff88;">
+                <h3>Pro Plan — PAM Pro ⚡</h3>
+                <h2 class="highlight">€4.99 <span style="font-size: 1rem; color: white;">/month</span></h2>
+                <ul style="text-align: left; margin-top: 15px; padding-left: 20px; display: block;">
+                    <li>Everything in the free plan</li>
+                    <li>Predictive future balance modelling</li>
+                    <li>Market price-drop predictions</li>
+                    <li>Tax automation and year-end reports</li>
+                    <li>Eurozone and multi-currency support</li>
+                    <li>Export reports as PDF or CSV</li>
+                </ul>
             </div>
         </div>
 
-        <div class="feature-card" style="margin-top: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
-            <h3>Try the PAM Effect</h3>
-            <p>Enter your average monthly spending in € to see potential savings:</p>
-            <div style="margin: 20px 0;">
-                <input type="number" id="monthlySpend" placeholder="e.g. 800" >
-                <button class="nav-cta" onclick="calculateSavings()">Calculate</button>
-            </div>
-            <p id="savingsResult" style="color: var(--accent); font-weight: bold; font-size: 1.2rem;"></p>
-        </div>
-    </section>
+        
+        <h2 style="margin-top: 60px;">Growth Roadmap</h2>
+        <p>PAM AI launches in Ireland and expands across Europe over three years, using Ireland's EU membership to access all 27 member states.</p>
 
-    <footer class="footer">
-        <p>&copy; 2026 PAM AI. All rights reserved.</p>
-    </footer>
+        <div class="grid" style="margin-top: 30px;">
+            <div class="card">
+                <h3 class="highlight">Year 1 — Ireland Launch</h3>
+                <p>PAM Standard launches as a free app targeting Irish students and young professionals. We focus on connecting with AIB, Bank of Ireland, and Revolut through Open Banking. The goal is to build a strong user base and improve the AI using real spending data.</p>
+                <p style="margin-top: 10px;"><strong>Target: 10,000 active users</strong></p>
+            </div>
+            <div class="card">
+                <h3 class="highlight">Year 2 — Monetisation</h3>
+                <p>Once users see real savings from PAM's insights, we convert them to PAM Pro. We also explore partnerships with Irish credit unions and introduce contextual affiliate revenue from financial products recommended by the AI.</p>
+                <p style="margin-top: 10px;"><strong>Target: €500,000 annual recurring revenue</strong></p>
+            </div>
+            <div class="card">
+                <h3 class="highlight">Year 3+ — EU Expansion</h3>
+                <p>Using Ireland's EU financial passporting rights, PAM expands into Germany, France, and the Netherlands the largest retail banking markets in the EU. The same product, localised for each country, with regional bank integrations added gradually.</p>
+                <p style="margin-top: 10px;"><strong>Target: 500,000 users across the EU</strong></p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px;">Competitor Comparison</h2>
+        <p>PAM AI sits between neobanks and budgeting tools more proactive than Revolut, and far easier to use than a spreadsheet.</p>
+
+        <div style="overflow-x: auto; margin-top: 30px;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                <thead>
+                    <tr style="background-color: #16161a; text-align: left;">
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Product</th>
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Transaction History</th>
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Proactive AI</th>
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Price Predictions</th>
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Auto-categorisation</th>
+                        <th style="padding: 12px; border-bottom: 1px solid #333;">Conversational Interface</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #1a1a2e;">
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88; font-weight: bold;">PAM AI</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes (Pro)</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Revolut / Monzo</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Basic</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Excel / Google Sheets</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">Manual only</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Cleo</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Partial</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #555;">No</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222;">Basic</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #222; color: #00ff88;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">AIB / Bank of Ireland</td>
+                        <td style="padding: 12px; color: #00ff88;">Yes</td>
+                        <td style="padding: 12px; color: #555;">No</td>
+                        <td style="padding: 12px; color: #555;">No</td>
+                        <td style="padding: 12px; color: #555;">No</td>
+                        <td style="padding: 12px; color: #555;">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+        <div class="calculator-section">
+            <h2>Savings Calculator</h2>
+            <p>Enter your average monthly spending below to see how much PAM AI could save you.</p>
+            <br>
+            <label for="monthlySpend">Monthly spending (€):</label><br><br>
+            <input type="number" id="monthlySpend" placeholder="e.g. 800">
+            <button class="btn-primary" onclick="calculateSavings()">Calculate My Savings</button>
+            <p id="savingsResult" style="margin-top: 15px; color: #00ff88; font-weight: bold; font-size: 1.1rem;"></p>
+        </div>
+
+    </div>
+
+    <footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo">PAM AI</div>
+            <p class="footer-tagline">Your personal AI money assistant.<br>Built by students, designed for everyone.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-col">
+                <div class="footer-col-title">Navigate</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">Innovation</a>
+                <a href="market.html">Market</a>
+                <a href="business.html">Business</a>
+                <a href="team.html">Team</a>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Project</div>
+                <span>Digital Innovation Management &amp; Enterprise</span>
+                <span>Dublin City University</span>
+                <span>Academic Year 2025–2026</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 PAM AI — All rights reserved</span>
+        <span>Made with ♥ at DCU</span>
+    </div>
+</footer>
 
     <script src="js/script.js"></script>
-    <script>
-        // Simple fallback function if your external script isn't linked yet
-        function calculateSavings() {
-            const spend = document.getElementById('monthlySpend').value;
-            if (spend) {
-                const savings = (spend * 0.1).toFixed(2); // Estimating 10% savings
-                document.getElementById('savingsResult').innerText = `PAM could help you save ~€${savings} per month!`;
-            }
-        }
-    </script>
+
 </body>
 </html>
